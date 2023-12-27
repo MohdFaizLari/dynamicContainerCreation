@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Progress-Bar</title>
+  </head>
+  <body>
+    <main class="parentCont pd-10" id="parentContainer">
+      <form
+        method="post"
+        name="boxCreationDetails"
+        id="boxCreationDetails"
+        class="pd-5 mr-b-20"
+      >
+        <div class="inputCont">
+          <div class="inputFieldsCont">
+            <label for="height">Height</label>
+            <input
+              type="text"
+              id="height"
+              placeholder="Enter total number"
+              required
+            />
+          </div>
+          <div class="inputFieldsCont">
+            <label for="width">Width</label>
+            <input
+              type="text"
+              id="width"
+              placeholder="Enter completed number"
+              required
+            />
+          </div>
+          <div class="inputFieldsCont">
+            <label for="border">Border</label>
+            <input type="text" id="border" placeholder="Enter text" required />
+          </div>
+
+          <div class="inputFieldsCont">
+            <label for="borderRadius">Border Radius</label>
+            <input type="text" id="borderRadius" placeholder="Enter text" required />
+          </div>
+          <div class="inputFieldsCont">
+            <label for="bgColor">Bg Colour</label>
+            <input type="text" id="bgColor" placeholder="Enter text" required />
+          </div>
+          <div class="inputFieldsCont">
+            <label for="label">Label</label>
+            <input type="text" id="label" placeholder="Enter text" required />
+          </div>
+        </div>
+        <div class="btnCont mr-t-20">
+          <button class="secondaryButton" type="submit">Submit</button>
+          <button class="secondaryButton" type="reset" onclick="clearBtnHandler()">Clear</button>
+        </div>
+      </form>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
